@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="~/assets/default.png" alt="Card image cap" />
+      <img class="card-img-top" src="~/assets/def.png" alt="Card image cap" />
       <div class="card-body">
         <h4 class="card-title">Price: {{propObject.price}}</h4>
         <h5 class="card-title">Patient Name: {{propObject.healthCardNumber}}</h5>

@@ -4,14 +4,14 @@
       <ul class="navbar-nav justify-content-end ml-auto">
         <li class="nav-item">
           <b-button v-on:click="toggle" class="mr-5 mt-3">
-            <span>Order your prescription</span>
+            <span>Add your prescription</span>
           </b-button>
         </li>
       </ul>
     </nav>
 
     <property-form v-if="showModal">
-      <h3 slot="header">Order your prescription</h3>
+      <h3 slot="header">Add your prescription</h3>
     </property-form>
   </div>
 </template>

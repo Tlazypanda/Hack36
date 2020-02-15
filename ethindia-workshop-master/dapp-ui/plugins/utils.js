@@ -51,7 +51,7 @@ export async function bookProperty(prescriptionId,DateBought,DateFulfilled,total
     from: account[0],
     value: totalPrice, //for testing
   })
-  alert('Property Booked Successfully')
+  alert('Prescription ordered Successfully')
 }
 
 export async function fetchAllProperties() {

@@ -4,7 +4,7 @@
       <div class="modal-wrapper">
         <div class="modal-container">
           <div class="modal-header">
-            <h3>Property Details</h3>
+            <h3>Presciption Details</h3>
           </div>
           <div class="modal-body">
             <slot name="body">
