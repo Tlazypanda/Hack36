@@ -1,0 +1,233 @@
+{
+  "abi": [
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "prescriptionId",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "paymentId",
+				"type": "uint256"
+			}
+		],
+		"name": "NewPayment",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "prescriptionId",
+				"type": "uint256"
+			}
+		],
+		"name": "NewPrescription",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "patientHealthCardNumber",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "frequency",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "dosage",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "addPrescription",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_prescriptionId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "DateBought",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "DateFulfilled",
+				"type": "uint256"
+			}
+		],
+		"name": "buyPrescription",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_prescriptionId",
+				"type": "uint256"
+			}
+		],
+		"name": "markPrescriptionAsFulfilled",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "paymentId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "payments",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "prescriptionId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "DateBought",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "DateFulfilled",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "prescriptionId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "prescriptions",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "patientHealthCardNumber",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "isFulfilled",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "drugName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "frequency",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "dosage",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "patientReceived",
+				"type": "bool"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+}
